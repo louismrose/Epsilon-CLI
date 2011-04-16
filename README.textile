@@ -1,0 +1,26 @@
+h1. Epsilon Command-Line Interface (CLI)
+
+A simple command-line interface for Epsilon. Run using:
+
+@java -jar epsilon_cli.jar@
+
+The following mandatory command-line arguments must be specified:
+
+@--mma <pathToMetamodelA> --mmb <pathToMetamodelB> --transf <pathToEpsilonProgram> --ma <pathToModelA> --mb <pathToModelB> --log <pathToModelB>@
+
+h2. Supported Languages
+
+The following Epsilon languages are supported:
+* Epsilon Object Language (.eol)
+* Epsilon Transformation Language (.etl)
+* Epsilon Flock (.mig)
+
+The file extension of the @<pathToEpsilonProgram>@ parameter determines which of the above Epsilon languages is used to manage the specified models.
+
+h2. Supported Modelling Frameworks
+
+Even though Epsilon supports many types of model, only EMF models are supported in this version of the CLI. 
+
+h2. Other Important Information
+
+When the @<pathToModelA>@ or @<pathToModelB>@ parameter specifies a file that does not exist, Epsilon CLI will treat that model as write-only, otherwise the model is treated as read-write. In other words, Epsilon CLI will always overwrite existing models.
