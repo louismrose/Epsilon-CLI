@@ -1,0 +1,5 @@
+var g1 = new Target!Graph;
+var g2  = new Target!Graph;
+
+g1.related.add(g2);
+g2.eResource().getContents().remove(g2);

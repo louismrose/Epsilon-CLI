@@ -1,0 +1,3 @@
+migrate Node {
+	migrated.name = original.name.toUpperCase();
+}

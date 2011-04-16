@@ -1,0 +1,30 @@
+<project default="copy_epsilon_dependencies">
+	
+	<target name="copy_epsilon_dependencies"
+		description="Creates JAR files from Epsilon projects. Assumes that the Epsilon source code is checked out.">
+	
+		<macrodef name="copy_dependency">
+			<attribute name="plugin" />
+			<attribute name="pathToBinaries" default="bin" />
+			<sequential>
+		   		<jar destfile="lib/@{plugin}.jar" basedir="../@{plugin}/@{pathToBinaries}"/>
+			</sequential>
+		</macrodef>
+		
+		<copy_dependency plugin="org.antlr.runtime_3.1.b1" pathToBinaries="" />
+		<copy_dependency plugin="org.eclipse.epsilon.eol.engine" />
+		<copy_dependency plugin="org.eclipse.epsilon.flock.engine" />
+		<copy_dependency plugin="org.eclipse.epsilon.etl.engine" />
+		<copy_dependency plugin="org.eclipse.epsilon.erl.engine" />
+		<copy_dependency plugin="org.eclipse.epsilon.commons" />
+		<copy_dependency plugin="org.eclipse.epsilon.emc.emf" />
+		<copy_dependency plugin="org.eclipse.epsilon.test.dependencies" />
+	</target>
+	
+	<!-- 
+	     Note that epsilon_cli.jar is built using Eclipse's
+	     "Export > Runnable JAR File" wizard, and not with
+	     this ANT build file.
+	 -->
+	
+</project>

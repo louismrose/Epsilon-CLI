@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<graph:Graph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graph="graph" xmi:id="_5vJY8WaUEeCiqPl7OujXlw">
+  <nodes xmi:id="_8VGHgGaUEeCiqPl7OujXlw" name="Alice"/>
+  <nodes xmi:id="_93l1AGaUEeCiqPl7OujXlw" name="Bob"/>
+  <nodes xmi:id="_-lXhAGaUEeCiqPl7OujXlw" name="Charlie"/>
+</graph:Graph>

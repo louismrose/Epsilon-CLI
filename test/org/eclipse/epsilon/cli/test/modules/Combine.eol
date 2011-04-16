@@ -1,0 +1,5 @@
+var combined : Target!Node = new Target!Node;
+
+for (source in Source!Node.all) {
+	combined.name = combined.name + source.name; 
+}

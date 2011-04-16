@@ -1,0 +1,11 @@
+@namespace(uri="graph", prefix="graph")
+package graph;
+
+class Graph {
+  val Node[*] nodes;
+  ref Graph[*] related;
+}
+
+class Node {
+   attr String name;
+}

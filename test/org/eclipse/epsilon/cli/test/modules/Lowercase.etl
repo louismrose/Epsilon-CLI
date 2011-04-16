@@ -1,0 +1,13 @@
+rule Graphs 
+	transform s : Source!Graph
+	to t : Target!Graph {
+	
+	t.nodes = s.nodes.equivalent();
+}
+
+rule LowercaseNodes 
+	transform s : Source!Node
+	to t : Target!Node {
+	
+	t.name = s.name.toLowerCase();
+}
