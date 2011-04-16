@@ -1,6 +1,6 @@
 h1. Epsilon Command-Line Interface (CLI)
 
-A simple command-line interface for Epsilon. Run using:
+A simple command-line interface for Epsilon. "Download":https://github.com/louismrose/Epsilon-CLI/raw/master/epsilon_cli.jar and run:
 
 @java -jar epsilon_cli.jar@
 
