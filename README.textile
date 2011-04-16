@@ -6,7 +6,7 @@ A simple command-line interface for Epsilon. "Download":https://github.com/louis
 
 The following mandatory command-line arguments must be specified:
 
-@--mma <pathToMetamodelA> --mmb <pathToMetamodelB> --transf <pathToEpsilonProgram> --ma <pathToModelA> --mb <pathToModelB> --log <pathToModelB>@
+@--mma <pathToMetamodelA> --mmb <pathToMetamodelB> --transf <pathToEpsilonProgram> --ma <pathToModelA> --mb <pathToModelB> --log <pathToLogFile>@
 
 h2. Supported Languages
 
